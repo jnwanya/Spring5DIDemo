@@ -8,12 +8,14 @@ import org.springframework.stereotype.Service;
  * Created by Jnwanya on
  * Thu, 04 Jan, 2018.
  */
-@Service
-@Profile("es")
-@Primary
 public class PrimarySpanishGreetingService implements GreetingService {
+    private GreetingRepository greetingRepository;
+
+    public PrimarySpanishGreetingService(GreetingRepository greetingRepository) {
+        this.greetingRepository = greetingRepository;
+    }
     @Override
     public String sayGreeting() {
-        return "Hola saludo mundial";
+        return greetingRepository.getSpanishGreeting();
     }
 }
