@@ -1,0 +1,26 @@
+name: Justin
+
+fullname: # this is a list
+    -Justin
+    -Tochukwu
+    -Nwanya
+
+book: # this is a book object
+   author: Kennedy Johnson
+   publisher: Macmilliam
+
+truth: yes
+another_truth: True
+more_truth: true
+
+false: no # False or false
+
+string_val: "This isn't it"
+
+include_new_line: |
+ tetst tetstt test
+ ttest ttest ttest
+
+ignore_new_line: >
+  test test test
+  tst test

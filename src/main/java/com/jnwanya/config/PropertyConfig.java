@@ -58,9 +58,9 @@ public class PropertyConfig {
         return fakeJmsBroker;
     }
 
-    @Bean
+    /*@Bean
     public static PropertySourcesPlaceholderConfigurer properties(){
         PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer = new PropertySourcesPlaceholderConfigurer();
         return propertySourcesPlaceholderConfigurer;
-    }
+    }*/
 }
